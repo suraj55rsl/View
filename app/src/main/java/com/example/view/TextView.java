@@ -2,7 +2,9 @@ package com.example.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 public class TextView extends AppCompatActivity {
 
@@ -10,5 +12,10 @@ public class TextView extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_text_view);
+    }
+
+    public void mainActivity(View view) {
+        Intent intent=new Intent(this,MainActivity.class);
+        startActivity(intent);
     }
 }

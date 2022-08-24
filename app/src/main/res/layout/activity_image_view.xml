@@ -11,8 +11,7 @@
         android:layout_width="350dp"
         android:layout_height="159dp"
         android:layout_marginTop="68dp"
-        android:scaleType="center"
-        android:tint="#0dd9d5"
+        android:scaleType="centerCrop"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
@@ -25,24 +24,38 @@
         android:layout_height="176dp"
         android:layout_marginTop="80dp"
         android:scaleType="fitXY"
-        android:tint="#660dd9d5"
         android:tintMode="multiply"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:srcCompat="@drawable/view2" />
+        app:srcCompat="@drawable/view2"
+        app:tint="#660dd9d5" />
 
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="260dp"
         android:layout_height="178dp"
-        android:layout_marginTop="76dp"
+        android:layout_marginTop="40dp"
         android:scaleType="matrix"
-        android:tint="#673AB7"
         android:tintMode="multiply"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.378"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2"
-        app:srcCompat="@drawable/view3" />
+        app:srcCompat="@drawable/view3"
+        app:tint="#673AB7" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Back"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="641dp"
+        android:onClick="mainActivity"
+        tools:ignore="MissingConstraints" />
 </androidx.constraintlayout.widget.ConstraintLayout>
